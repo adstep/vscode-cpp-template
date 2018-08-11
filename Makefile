@@ -1,4 +1,4 @@
-TARGET_EXEC ?= test
+TARGET_EXEC ?= test-project
 
 BUILD_DIR ?= ./build
 SRC_DIRS ?= ./src
