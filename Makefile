@@ -1,4 +1,4 @@
-TARGET_EXEC ?= test.out
+TARGET_EXEC ?= test
 
 BUILD_DIR ?= ./build
 SRC_DIRS ?= ./src
@@ -16,6 +16,7 @@ CPPFLAGS ?= $(INC_FLAGS) -std=c++1y -MMD -MP -DDEBUG -g
 
 $(BUILD_DIR)/$(TARGET_EXEC): $(OBJS)
 	$(CXX) $(OBJS) -o $@ $(LDFLAGS)
+	cp $(BUILD_DIR)/$(TARGET_EXEC) $(TARGET_EXEC)
 
 debug: CPPFLAGS += lol
 
