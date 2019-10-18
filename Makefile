@@ -16,7 +16,6 @@ CPPFLAGS ?= $(INC_FLAGS) -std=c++1y -MMD -MP -DDEBUG -g
 
 $(BUILD_DIR)/$(TARGET_EXEC): $(OBJS)
 	$(CXX) $(OBJS) -o $@ $(LDFLAGS)
-	cp $(BUILD_DIR)/$(TARGET_EXEC) $(TARGET_EXEC)
 
 debug: CPPFLAGS += lol
 

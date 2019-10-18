@@ -1,9 +1,6 @@
-#ifndef ADDER_h
-#define ADDER_h
+#pragma once
 
 class Adder {
 public:
   int add(int x, int);
 };
-
-#endif
